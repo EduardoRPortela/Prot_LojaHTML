@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Loja</title>
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+   <style type="text/css">
+      body {
+         margin: 0 ;
+      background-color: white;
+      background-image: url("images/fundo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80% 80%;
+      background-attachment: fixed;
+      }
+
+       #menu{
+      width: 100%;
+      background-color: black;
+      padding: 10px;
+      display: flex;
+      color: white;
+      justify-content: space-around;
+      opacity: 0.5;
+
+     }
+     #menu a:link{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+
+     }
+
+     #menu a:active{
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+     }
+     #menu a:visited{
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+     }
+     #menu a:hover{
+      color: white;
+      text-decoration: underline;
+      letter-spacing: 5px;
+     }
+
+
+      .produto {
+         width: 15%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         border-color: black;
+
+         border-width: 2px;
+
+         border-style: solid; 
+
+         border-radius: 20px;
+
+         padding: 20px;
+         margin-top: 30px;       
+      }
+
+      .produto img {
+         width: 80%;
+         margin-bottom: 3%;
+      }
+
+      .produto img:hover {
+         width: 83%;
+         margin-bottom: 0;
+      }     
+
+      .listagemProdutos {
+         display: flex;
+         justify-content: space-around;
+      }
+
+      input[type="button"] {
+         background-color: red;
+         border-color: red;
+         border-radius: 10px;
+         padding: 10px;
+         color: white;
+      }
+
+      input[type="button"]:hover {  
+         background-color: black;
+         border-color: black;
+         border-radius: 10px;
+         padding: 10px;
+         color: white;
+      }
+
+      input[type="text"]:hover {
+         background-color: red;
+      }  
+
+      input[type="text"]:focus {
+         background-color: red;
+         color: white;
+      }  
+
+      #topo {
+         position: fixed;
+         left:10px;
+         top:90vh;
+      }                 
+   </style>
+</head>
+
+<body>
+   <div id="menu">
+      <div><a href="#">Camisetas</a></div>
+      <div><a href="#">Moletons</a></div>
+      <div><a href="#">Mochilas</a></div>
+      <div><a href="#">Canecas</a></div>  
+      <div>
+         <input type="text" id="buscar" size="20"   placeholder="Buscar">
+      </div>
+      <div><a href="#"><span class="material-symbols-outlined">
+      shopping_cart</span></a></div>
+   </div>
+
+   <div class="listagemProdutos">
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" 
+         onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');"> 
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+   </div>   
+
+   <div class="listagemProdutos">
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg" onclick="alert('Produto adicionado ao carrinho!');">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg" onclick="alert('Produto adicionado ao carrinho!');">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+   </div>   
+
+   <div class="listagemProdutos">
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+
+      <div class="produto">
+         <h4>Camiseta</h4>
+         <img src="images/camiseta.jpg">
+         <br>
+         R$50,00
+         <br><br>
+         <input type="button" value="Comprar" onclick="alert('Produto adicionado ao carrinho!');">
+      </div>
+   </div>   
+
+   <hr>
+   <a href="#menu" id="topo">Topo</a>
+
+</body>
+</html>
